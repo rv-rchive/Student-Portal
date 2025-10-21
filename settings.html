@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li class="active"><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Settings</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <div class="settings-container">
+
+      <!-- NOTIFICATION SETTINGS -->
+      <div class="card">
+        <h3><i class="fa-solid fa-bell"></i> Notification Settings</h3>
+        <p>Choose how you want to receive notifications.</p>
+        <div class="toggle-row">
+          <label>Email Notifications</label>
+          <input type="checkbox" id="emailNotif" checked>
+        </div>
+        <div class="toggle-row">
+          <label>SMS Notifications</label>
+          <input type="checkbox" id="smsNotif">
+        </div>
+        <div class="toggle-row">
+          <label>Portal Notifications</label>
+          <input type="checkbox" id="portalNotif" checked>
+        </div>
+      </div>
+
+      <!-- THEME SETTINGS -->
+      <div class="card">
+        <h3><i class="fa-solid fa-moon"></i> Theme</h3>
+        <p>Switch between light and dark mode.</p>
+        <div class="toggle-row">
+          <label>Enable Dark Mode</label>
+          <input type="checkbox" id="themeToggle">
+        </div>
+      </div>
+
+      <!-- ACCOUNT SECURITY -->
+      <div class="card">
+        <h3><i class="fa-solid fa-lock"></i> Account Security</h3>
+        <p>Change your password to keep your account safe.</p>
+        <form id="passwordForm" class="settings-form">
+          <label for="currentPass">Current Password</label>
+          <input type="password" id="currentPass" required>
+
+          <label for="newPass">New Password</label>
+          <input type="password" id="newPass" required>
+
+          <label for="confirmPass">Confirm New Password</label>
+          <input type="password" id="confirmPass" required>
+
+          <button type="submit" class="save-btn"><i class="fa-solid fa-save"></i> Update Password</button>
+        </form>
+      </div>
+
+      <!-- GENERAL SETTINGS -->
+      <div class="card">
+        <h3><i class="fa-solid fa-sliders"></i> General Settings</h3>
+        <form class="settings-form">
+          <label for="language">Language</label>
+          <select id="language">
+            <option>English</option>
+            <option>Filipino</option>
+          </select>
+
+          <label for="timeFormat">Time Format</label>
+          <select id="timeFormat">
+            <option>12-hour (AM/PM)</option>
+            <option>24-hour</option>
+          </select>
+
+          <button type="button" class="save-btn"><i class="fa-solid fa-save"></i> Save Changes</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

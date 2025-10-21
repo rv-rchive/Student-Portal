@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li class="active"><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Grades</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <!-- GRADES TABLE -->
+    <div class="grades-container">
+      <table class="grades-table">
+        <thead>
+          <tr>
+            <th>School Year</th>
+            <th>Year</th>
+            <th>Subject</th>
+            <th>Professor</th>
+            <th>Prelim</th>
+            <th>Midterm</th>
+            <th>Final</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024–2025</td>
+            <td>Second</td>
+            <td>QUANTITATIVE METHOD (INCLUDING MODELING AND SIMULATION)</td>
+            <td>CASCANTE, SHEILA MAY B.</td>
+            <td><span class="grade good">1.75</span></td>
+            <td><span class="grade good">1.50</span></td>
+            <td><span class="grade good">1.25</span></td>
+            <td><span class="status passed">Passed</span></td>
+          </tr>
+          <tr>
+            <td>2024–2025</td>
+            <td>Second</td>
+            <td>LIFE AND WORKS OF RIZAL</td>
+            <td>LACUESTA, SARAH NICOLE</td>
+            <td><span class="grade good">1.50</span></td>
+            <td><span class="grade good">1.25</span></td>
+            <td><span class="grade good">1.75</span></td>
+            <td><span class="status passed">Passed</span></td>
+          </tr>
+          <tr>
+            <td>2024–2025</td>
+            <td>Second</td>
+            <td>CISCO FUNDAMENTALS OF NETWORKING 1</td>
+            <td>CHIONG, JORIZ DEDAL</td>
+            <td><span class="grade warning">2.50</span></td>
+            <td><span class="grade fair">2.00</span></td>
+            <td><span class="grade good">1.75</span></td>
+            <td><span class="status passed">Passed</span></td>
+          </tr>
+          <tr>
+            <td>2024–2025</td>
+            <td>Second</td>
+            <td>SOCIAL AND PROFESSIONAL ISSUES 1</td>
+            <td>CHIONG, JORIZ DEDAL</td>
+            <td><span class="grade good">1.75</span></td>
+            <td><span class="grade good">1.50</span></td>
+            <td><span class="grade good">1.25</span></td>
+            <td><span class="status passed">Passed</span></td>
+          </tr>
+          <tr>
+            <td>2024–2025</td>
+            <td>Second</td>
+            <td>INFORMATION MANAGEMENT</td>
+            <td>CHIONG, JORIZ DEDAL</td>
+            <td><span class="grade fair">2.00</span></td>
+            <td><span class="grade good">1.75</span></td>
+            <td><span class="grade good">1.50</span></td>
+            <td><span class="status passed">Passed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

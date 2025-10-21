@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li class="active"><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Requirements</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <!-- PROGRESS INFO -->
+    <div class="requirements-container">
+      <div class="progress-text">
+        <p id="progressCount"><strong>0 of 3 documents submitted</strong></p>
+      </div>
+
+      <div class="requirements-grid">
+        <!-- Requirement 1 -->
+        <div class="requirement-card">
+          <div class="req-header">
+            <h3>Birth Certificate</h3>
+            <span class="status-tag">Not Uploaded Yet</span>
+          </div>
+          <p>Official birth certificate issued by PSA</p>
+          <div class="req-actions">
+            <button class="upload-btn"><i class="fa-solid fa-plus"></i> Upload</button>
+            <input type="file" class="file-input" accept=".pdf,.jpg,.jpeg,.png" hidden>
+            <button class="view-btn" disabled>View Document</button>
+          </div>
+        </div>
+
+        <!-- Requirement 2 -->
+        <div class="requirement-card">
+          <div class="req-header">
+            <h3>Form 137</h3>
+            <span class="status-tag">Not Uploaded Yet</span>
+          </div>
+          <p>High school permanent record</p>
+          <div class="req-actions">
+            <button class="upload-btn"><i class="fa-solid fa-plus"></i> Upload</button>
+            <input type="file" class="file-input" accept=".pdf,.jpg,.jpeg,.png" hidden>
+            <button class="view-btn" disabled>View Document</button>
+          </div>
+        </div>
+
+        <!-- Requirement 3 -->
+        <div class="requirement-card">
+          <div class="req-header">
+            <h3>Grades</h3>
+            <span class="status-tag">Not Uploaded Yet</span>
+          </div>
+          <p>Latest grade report or transcript</p>
+          <div class="req-actions">
+            <button class="upload-btn"><i class="fa-solid fa-plus"></i> Upload</button>
+            <input type="file" class="file-input" accept=".pdf,.jpg,.jpeg,.png" hidden>
+            <button class="view-btn" disabled>View Document</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li class="active"><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Registered Subjects</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <!-- SUBJECTS TABLE -->
+    <div class="subjects-container">
+      <table class="subjects-table">
+        <thead>
+          <tr>
+            <th>Subject Code</th>
+            <th>Subject Title</th>
+            <th>Units</th>
+            <th>Schedule</th>
+            <th>Instructor</th>
+            <th>Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>OLSP2</td>
+            <td>SOCIAL ISSUES AND PROFESSIONAL PRACTICE 2</td>
+            <td>3</td>
+            <td>Wed & Sat / 09:00AM - 10:30AM</td>
+            <td>CHIONG, JORIZ DEDAL</td>
+            <td>B1.26</td>
+          </tr>
+          <tr>
+            <td>OLSDF04</td>
+            <td>OBJECT-ORIENTED PROGRAMMING</td>
+            <td>4</td>
+            <td>Wed & Sat / 10:30AM - 12:00NN</td>
+            <td>CHIONG, JORIZ DEDAL</td>
+            <td>B1.26</td>
+          </tr>
+          <tr>
+            <td>OLIM2</td>
+            <td>ADVANCE DATABASE SYSTEM</td>
+            <td>4</td>
+            <td>Wed & Sat / 12:00NN - 01:30PM</td>
+            <td>CHIONG, JORIZ DEDAL</td>
+            <td>B1.26</td>
+          </tr>
+          <tr>
+            <td>OLSIA1</td>
+            <td>SYSTEM INTEGRATION AND ARCHITECTURE 1</td>
+            <td>4</td>
+            <td>Wed & Sat / 01:30PM - 03:00PM</td>
+            <td>CHIONG, JORIZ DEDAL</td>
+            <td>B1.26</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

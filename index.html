@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li class="active"><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Student Dashboard</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <div class="dashboard-container">
+      <div class="left-section">
+        <div class="profile-card">
+          <img src="assets/c_jay.png" alt="Student Photo"/>
+          <div class="profile-info">
+            <h3>ESPINO, DAHN ARVIE GAJUDO</h3>
+            <p>UA202301084</p>
+            <p>BS in Information Technology</p>
+            <p>Junior College Student</p>
+          </div>
+        </div>
+
+        <div class="class-container">
+          <div class="class-boxes">
+            <div class="class-box">
+              <h4>Ongoing Class</h4>
+              <p>SIA1</p>
+              <p>(01:30PM – 03:00PM)</p>
+            </div>
+            <div class="class-box">
+              <h4>Next Class</h4>
+              <p>N/A</p>
+              <p>(--:--  –  --:--)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-card">
+          <h4>Weekly Schedule</h4>
+          <table>
+            <tr>
+              <th>Time</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thu</th>
+              <th>Fri</th>
+              <th>Sat</th>
+              <th>Sun</th>
+            </tr>
+            <tr>
+              <td>9:00 AM</td>
+              <td></td>
+              <td></td>
+              <td>SP2</td>
+              <td></td>
+              <td></td>
+              <td>SP2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10:30 AM</td>
+              <td></td>
+              <td></td>
+              <td>SDF04</td>
+              <td></td>
+              <td></td>
+              <td>SDF04</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td></td>
+              <td></td>
+              <td>IM2</td>
+              <td></td>
+              <td></td>
+              <td>IM2</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1:30 PM</td>
+              <td></td>
+              <td></td>
+              <td class="highlight">SIA1</td>
+              <td></td>
+              <td></td>
+              <td>SIA1</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="announcement-card">
+        <h4>Announcements <i class="fa-solid fa-bullhorn"></i></h4>
+        <p><strong>NO Face Mask, NO Entry</strong></p>
+        <p>Starting October 18, 2025, all students, faculty, and staff are required to wear face masks in all ICCT Colleges campuses.</p>
+        <p>Let’s work together to keep our learning environment safe and healthy.</p>
+        <img src="assets/Announcement.jpg" alt="Announcement"/>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

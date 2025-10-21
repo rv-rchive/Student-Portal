@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li class="active"><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Frequently Asked Questions</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <!-- FAQ SECTION -->
+    <div class="card faq-container">
+      <h3><i class="fa-solid fa-circle-question"></i> General Questions</h3>
+      <details class="faq-item">
+  <summary class="faq-summary"><i class="fa-solid fa-chevron-right"></i> How do I update my profile?</summary>
+  <div class="faq-answer">
+    <p>Go to the <strong>Profile</strong> page and click the upload or edit buttons beside your information. You can also change your display picture from there.</p>
+  </div>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-summary"><i class="fa-solid fa-chevron-right"></i> Where can I see my registered subjects?</summary>
+  <div class="faq-answer">
+    <p>You can view all your currently enrolled subjects from the <strong>Subjects</strong> tab in the sidebar.</p>
+  </div>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-summary"><i class="fa-solid fa-chevron-right"></i> How can I download my registration form?</summary>
+  <div class="faq-answer">
+    <p>Your ORF (Official Registration Form) is available in the <strong>Accounts & Payments</strong> page under the <em>Account Documents</em> section.</p>
+  </div>
+</details>
+
+<h3 style="margin-top: 20px;"><i class="fa-solid fa-file-lines"></i> Requirements & Clearance</h3>
+
+<details class="faq-item">
+  <summary class="faq-summary"><i class="fa-solid fa-chevron-right"></i> How do I upload my requirements?</summary>
+  <div class="faq-answer">
+    <p>Go to the <strong>Requirements</strong> page and click the <em>Upload</em> button under each document card.</p>
+  </div>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-summary"><i class="fa-solid fa-chevron-right"></i> Why is my clearance still pending?</summary>
+  <div class="faq-answer">
+    <p>Clearance can only be finalized after in-person verification by each department. Please visit the concerned office physically to complete the process.</p>
+  </div>
+</details>
+
+<h3 style="margin-top: 20px;"><i class="fa-solid fa-gear"></i> Account / Technical</h3>
+
+<details class="faq-item">
+  <summary class="faq-summary"><i class="fa-solid fa-chevron-right"></i> Can I switch to dark mode?</summary>
+  <div class="faq-answer">
+    <p>Yes! Click the <strong>moon</strong> icon in the top-right corner or enable it through <strong>Settings → Theme</strong>.</p>
+  </div>
+</details>
+
+<details class="faq-item">
+  <summary class="faq-summary"><i class="fa-solid fa-chevron-right"></i> I found a bug. Where can I report it?</summary>
+  <div class="faq-answer">
+    <p>You can report portal issues under the <strong>Feedback</strong> page by selecting “Issue/Problem” as your feedback type.</p>
+  </div>
+</details>
+
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li class="active"><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Clearance</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <!-- PROGRESS SECTION -->
+    <div class="clearance-progress card">
+      <h3>Overall Progress:</h3>
+      <div class="progress-bar">
+        <div class="progress" style="width: 0%;"></div>
+      </div>
+      <p>0% Complete</p>
+      <p>You have completed <strong>0 out of 8</strong> clearance requirements.</p>
+
+      <div class="note-box">
+        <strong>Note:</strong> It will only be possible to accomplish if you comply physically.
+      </div>
+    </div>
+
+    <!-- CLEARANCE REQUIREMENTS -->
+    <div class="clearance-req card">
+      <h3>Clearance Requirements</h3>
+      <table class="clearance-table">
+        <thead>
+          <tr>
+            <th>Department</th>
+            <th>Requirement</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Registrar's Office</td>
+            <td>Academic Records Clearance</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>Accounting Office</td>
+            <td>Financial Clearance</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>Library</td>
+            <td>Library Clearance</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>Guidance Office</td>
+            <td>Exit Interview</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>Department Chair</td>
+            <td>Department Clearance</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>Student Affairs</td>
+            <td>Organization Clearance</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>Clinic</td>
+            <td>Medical Clearance</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+          <tr>
+            <td>Prefect of Discipline</td>
+            <td>Disciplinary Clearance</td>
+            <td><span class="status pending">Pending</span></td>
+            <td><button class="view-btn">View</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li class="active"><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Student Profile</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <!-- PROF CARD -->
+    <div class="prof-card-wrapper">
+      <div class="prof-card">
+        <!-- left info -->
+        <div class="prof-grid">
+          <div class="prof-left">
+
+            <div class="prof-field">
+              <div class="prof-label">NAME</div>
+              <div class="prof-value">ESPINO, DAHN ARVIE GAJUDO</div>
+            </div>
+
+            <div class="prof-field">
+              <div class="prof-label">COURSE</div>
+              <div class="prof-value">BS in Information Technology</div>
+            </div>
+
+            <div class="prof-field">
+              <div class="prof-label">YEAR LEVEL</div>
+              <div class="prof-value">Third Year </div>
+            </div>
+
+            <div class="prof-field">
+              <div class="prof-label">CURRICULUM YEAR</div>
+              <div class="prof-value">2021</div>
+            </div>
+
+            <div class="prof-field">
+              <div class="prof-label">SCHOOL YEAR</div>
+              <div class="prof-value">2025-2026</div>
+            </div>
+          </div>
+
+          <div class="prof-right">
+            <div class="prof-field">
+              <div class="prof-label">STUDENT NUMBER</div>
+              <div class="prof-value">UA202301084</div>
+            </div>
+
+            <div class="prof-field">
+              <div class="prof-label">SECTION</div>
+              <div class="prof-value">LFAU311N010</div>
+            </div>
+
+            <div class="prof-field">
+              <div class="prof-label">STATUS</div>
+              <div class="prof-value">Continuing (Regular)</div>
+            </div>
+
+            <div class="prof-field">
+              <div class="prof-label">ACADEMIC TERM</div>
+              <div class="prof-value">First</div>
+            </div>
+
+            <div class="prof-field">
+              <div class="prof-label">MODALITY</div>
+              <div class="prof-value">Limited Face-to-Face Classes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- right side -->
+        <div class="prof-side">
+          <div class="prof-avatar">
+  <img src="assets/c_jay.png" id="profImage" alt="Profile Picture">
+  <span class="prof-initials"></span>
+</div>
+
+
+          <button class="prof-btn-upload" id="uploadBtn">
+          <i class="fa-solid fa-upload"></i> Upload Profile Picture
+</button>
+<input type="file" id="profFileInput" accept="image/*" style="display:none;">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

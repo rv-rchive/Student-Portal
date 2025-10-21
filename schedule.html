@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li class="active"><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Class Schedule</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <!-- WEEKLY SCHEDULE -->
+    <div class="schedule-wrapper">
+      <div class="day-column">
+        <h3>Monday</h3>
+        <div class="class-box no-class">No Classes</div>
+      </div>
+
+      <div class="day-column">
+        <h3>Tuesday</h3>
+        <div class="class-box no-class">No Classes</div>
+      </div>
+
+      <div class="day-column highlight-day">
+        <h3>Wednesday</h3>
+        <div class="class-box">
+          <p><strong>09:00AM - 10:30AM</strong></p>
+          <p>OLSP2 - SOCIAL ISSUES AND PROFESSIONAL PRACTICE 2</p>
+          <p>Room: B1.26</p>
+        </div>
+        <div class="class-box">
+          <p><strong>10:30AM - 12:00NN</strong></p>
+          <p>OLSDF04 - OBJECT-ORIENTED PROGRAMMING</p>
+          <p>Room: B1.26</p>
+        </div>
+        <div class="class-box">
+          <p><strong>12:00NN - 01:30PM</strong></p>
+          <p>OLIM2 - ADVANCE DATABASE SYSTEM</p>
+          <p>Room: B1.26</p>
+        </div>
+        <div class="class-box highlight-class">
+          <p><strong>01:30PM - 03:00PM</strong></p>
+          <p>OLSIA1 - SYSTEM INTEGRATION AND ARCHITECTURE 1</p>
+          <p>Room: B1.26</p>
+        </div>
+      </div>
+
+      <div class="day-column">
+        <h3>Thursday</h3>
+        <div class="class-box no-class">No Classes</div>
+      </div>
+
+      <div class="day-column">
+        <h3>Friday</h3>
+        <div class="class-box no-class">No Classes</div>
+      </div>
+
+      <div class="day-column">
+        <h3>Saturday</h3>
+        <div class="class-box">
+          <p><strong>09:00AM - 10:30AM</strong></p>
+          <p>OLSP2 - SOCIAL ISSUES AND PROFESSIONAL PRACTICE 2</p>
+          <p>Room: B1.26</p>
+        </div>
+        <div class="class-box">
+          <p><strong>10:30AM - 12:00NN</strong></p>
+          <p>OLSDF04 - OBJECT-ORIENTED PROGRAMMING</p>
+          <p>Room: B1.26</p>
+        </div>
+        <div class="class-box">
+          <p><strong>12:00NN - 01:30PM</strong></p>
+          <p>OLIM2 - ADVANCE DATABASE SYSTEM</p>
+          <p>Room: B1.26</p>
+        </div>
+        <div class="class-box">
+          <p><strong>01:30PM - 03:00PM</strong></p>
+          <p>OLSIA1 - SYSTEM INTEGRATION AND ARCHITECTURE 1</p>
+          <p>Room: B1.26</p>
+        </div>
+      </div>
+
+      <div class="day-column">
+        <h3>Sunday</h3>
+        <div class="class-box no-class">No Classes</div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

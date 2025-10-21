@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=DM+Sans" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+    <h2>Student Portal</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a></li>
+        <li><a href="subjects.html"><i class="fa-solid fa-book"></i><span>Subjects</span></a></li>
+        <li><a href="schedule.html#"><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a></li>
+        <li><a href="grades.html#"><i class="fa-solid fa-graduation-cap"></i><span>Grades</span></a></li>
+        <li class="separator"><hr></li>
+        <li class="active"><a href="accounts.html#"><i class="fa-solid fa-wallet"></i><span>Account & Payments</span></a></li>
+        <li><a href="requirements.html#"><i class="fa-solid fa-file-lines"></i><span>Requirements</span></a></li>
+        <li><a href="clearance.html#"><i class="fa-solid fa-check-circle"></i><span>Clearance</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="faq.html#"><i class="fa-solid fa-circle-question"></i><span>FAQ</span></a></li>
+        <li><a href="feedback.html#"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a></li>
+        <li><a href="settings.html#"><i class="fa-solid fa-gear"></i><span>Settings</span></a></li>
+        <li class="separator"><hr></li>
+        <li><a href="#"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content" id="main-content">
+    <div class="header-row">
+      <h2 class="dashboard-header">Accounts & Payments</h2>
+      <div class="topbar">
+        <i class="fa-solid fa-bell"></i>
+        <i class="fa-solid fa-user-group"></i>
+        <i class="fa-solid fa-moon" id="darkModeToggle"></i>
+      </div>
+    </div>
+
+    <!-- ACCOUNT SUMMARY -->
+    <div class="account-summary below-layout">
+      <div class="account-card">
+        <h3>Amount Due</h3>
+        <h2 class="amount red">₱ 0.00</h2>
+        <p>No outstanding balance</p>
+      </div>
+
+      <div class="account-card">
+        <h3>Total Paid</h3>
+        <h2 class="amount green">₱ 8,613.00</h2>
+        <p>Fully paid for current term</p>
+      </div>
+
+      <div class="account-card">
+        <h3>Account Balance</h3>
+        <h2 class="amount blue">₱ 0.00</h2>
+        <p>No remaining balance</p>
+      </div>
+    </div>
+
+    <!-- ACCOUNT DOCUMENTS -->
+    <div class="account-documents full-width">
+      <h3>Account Documents</h3>
+      <div class="documents-grid three-cols">
+        <div class="document-card">
+          <i class="fa-solid fa-file-lines doc-icon"></i>
+          <h4>Official Registration Form (ORF)</h4>
+          <p>View and download your official registration form</p>
+          <a href="assets/Official registration and Assessment Form.pdf" target="_blank" download>
+            <button class="doc-btn"><i class="fa-solid fa-download"></i> Download ORF</button>
+          </a>
+        </div>
+
+        <div class="document-card">
+          <i class="fa-solid fa-calculator doc-icon"></i>
+          <h4>Tentative Assessment</h4>
+          <p>View your tentative tuition and fee assessment</p>
+          <a href="assets/Tentative and Assessment Form.pdf" target="_blank">
+            <button class="doc-btn"><i class="fa-solid fa-eye"></i> View Assessment</button>
+          </a>
+        </div>
+
+        <div class="document-card">
+          <i class="fa-solid fa-id-card doc-icon"></i>
+          <h4>Exam Permit</h4>
+          <p>Download your exam permit for the current term</p>
+          <a href="assets/UA202301084.png" target="_blank" download>
+            <button class="doc-btn"><i class="fa-solid fa-download"></i> Download Permit</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
